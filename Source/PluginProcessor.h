@@ -9,7 +9,6 @@
 #pragma once
 
 #include <JuceHeader.h>
-#include <juce_audio_processors/utilities/juce_AudioProcessorValueTreeState.cpp>
 
 //==============================================================================
 /**
@@ -59,7 +58,7 @@ public:
 
     //===CUSTOM=====================================================================
     static juce::AudioProcessorValueTreeState::ParameterLayout createParameterLayout();
-    juce::AudioProcessorValueTreeState apvts{ *this, nullptr, "Parameters", createParameterLayout() };
+    juce::AudioProcessorValueTreeState apvts { *this, nullptr, "Parameters", createParameterLayout()};
 
 private:
     //==============================================================================
