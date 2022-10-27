@@ -57,7 +57,11 @@ public:
     void setStateInformation (const void* data, int sizeInBytes) override;
 
     //===CUSTOM=====================================================================
+    // definition
     static juce::AudioProcessorValueTreeState::ParameterLayout createParameterLayout();
+
+
+    //                                                                          call method
     juce::AudioProcessorValueTreeState apvts { *this, nullptr, "Parameters", createParameterLayout()};
 
 private:

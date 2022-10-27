@@ -183,6 +183,7 @@ void SimpleQAudioProcessor::setStateInformation (const void* data, int sizeInByt
     // whose contents will have been created by the getStateInformation() call.
 }
 
+// implementation
 juce::AudioProcessorValueTreeState::ParameterLayout SimpleQAudioProcessor::createParameterLayout() {
 
     juce::AudioProcessorValueTreeState::ParameterLayout layout;
